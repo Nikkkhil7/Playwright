@@ -21,7 +21,7 @@ jobs:
       run: npx playwright install --with-deps
  
     - name: Run Playwright tests
-      run: npx playwright test Locator.spec.js --reporter=html,allure-playwright
+      run: npx playwright test keyboard.spec.js --reporter=html,allure-playwright
  
     - name: Install Allure CLI
       run: npm install -g allure-commandline --save-dev
